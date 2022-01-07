@@ -1,4 +1,3 @@
-
 def convert_to_int(integer_string_with_commas):
     comma_separated_parts = integer_string_with_commas.split(",")
     for i in range(len(comma_separated_parts)):

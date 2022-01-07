@@ -22,6 +22,3 @@ def split_into_training_and_testing_sets(data_array):
         data_array[permuted_indices[:num_training], :],
         data_array[permuted_indices[num_training:], :],
     )
-    
-    
-    
