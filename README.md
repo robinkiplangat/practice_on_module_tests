@@ -1,12 +1,10 @@
-Practice Module Tests
----
+# Practice Module Tests
 
 Sample scripts to aid in understanding the Theoretical structure for Unit Testing for Data Science.
 
 ## Project Structure
 
 ```
-
 src/        #All application code
 |-- data/ 
 |   |-- __init__.py
@@ -32,5 +30,4 @@ test/ # Test suite: all tests are found here
 |   |-- test_train.py
 |-- scripts/
 |   |-- test_preprocessing_helpers.py
-
 ```
