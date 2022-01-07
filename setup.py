@@ -6,7 +6,7 @@ setup(
     version='0.1.0',
     packages=find_packages("src"),
     package_dir={"": "src"},
-    author="Robin Kiplangat"
+    author="Robin Kiplangat",
     install_requires=["jupyter==1.0.0",
                         "matplotlib==3.1.1",
                         "numpy==1.17.3",
