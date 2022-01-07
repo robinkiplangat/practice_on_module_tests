@@ -9,7 +9,7 @@ setup(
     author="Robin Kiplangat",
     install_requires=["jupyter==1.0.0",
                         "matplotlib==3.1.1",
-                        "numpy==1.17.3",
+                        "numpy==1.21",
                         "pytest==5.2.2",
                         "pytest-mpl==0.10",
                         "pytest-mock==1.11.2",
