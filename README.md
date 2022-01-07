@@ -1,4 +1,5 @@
 [![Build Status](https://app.travis-ci.com/robinkiplangat/practice_on_module_tests.svg?branch=main)](https://app.travis-ci.com/robinkiplangat/practice_on_module_tests)
+[![codecov](https://codecov.io/gh/robinkiplangat/practice_on_module_tests/branch/main/graph/badge.svg?token=TIJ0A0XAMY)](https://codecov.io/gh/robinkiplangat/practice_on_module_tests)
 
 # Practice Module Tests
 
