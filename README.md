@@ -1,6 +1,11 @@
+[![Build Status](https://app.travis-ci.com/robinkiplangat/practice_on_module_tests.svg?branch=main)](https://app.travis-ci.com/robinkiplangat/practice_on_module_tests)
+
 # Practice Module Tests
 
-Sample scripts to aid in understanding the Theoretical structure for Unit Testing for Data Science.
+
+
+Sample scripts to aid in understanding the Theoretical structure for Unit Testing for Data Science
+on a Univariate linear regression of housing price against housing area.
 
 ## Project Structure
 
