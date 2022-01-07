@@ -6,6 +6,8 @@ from features.as_numpy import get_data_as_numpy_array
 
 filePath = "src/data/example_clean_data.txt"
 class TestGetDataAsNumpyArray(object):
+    # Add a reason for skipping the test
+    @pytest.mark.skipif(sys.version_info < (2, 7), reason="Works only on Python 2.7 or higher")
     def test_on_clean_file(self):
 
         expected = np.array(
