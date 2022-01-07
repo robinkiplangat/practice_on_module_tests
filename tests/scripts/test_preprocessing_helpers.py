@@ -1,5 +1,5 @@
 import pytest
-from scripts.preprocessing_helpers import convert_to_int
+from src.scripts.preprocessing_helpers import convert_to_int, row_to_list
 
 
 def test_with_no_comma():
