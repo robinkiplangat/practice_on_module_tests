@@ -5,7 +5,6 @@ python:
 
 install:
   - pip install -e .
-  - pip install pytest-mock  
   - pip install pytest-cov codecov # Install packages for code coverage report
 
 script:
