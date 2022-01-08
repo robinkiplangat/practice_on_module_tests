@@ -1,8 +1,10 @@
 import sys
 import os
-sys.path.insert(0, './src')
+
+sys.path.insert(0, "./src")
+import pytest
 import numpy as np
-from models.train import split_into_training_and_testing_sets
+from models.train import split_into_training_and_testing_sets, model_test
 
 
 class TestSplitIntoTrainingAndTestingSets(object):
@@ -36,3 +38,36 @@ class TestSplitIntoTrainingAndTestingSets(object):
         ), "The actual number of rows in the testing array is not {}".format(
             expected_testing_array_num_rows
         )
+
+
+@pytest.mark.xfail(reason="Using TDD, model_test() has not yet been implemented")
+class TestModelTest(object):
+    def test_on_perfect_fit(self):
+        test_input = np.array([[1.0, 3.0], [2.0, 5.0], [3.0, 7.0]])
+        expected = 1.0
+        actual = model_test(test_input, 2.0, 1.0)
+        assert actual == pytest.approx(expected), "Expected: {0}, Actual: {1}".format(
+            expected, actual
+        )
+
+    def test_on_one_dimensional_array(self):
+        test_input = np.array([1.0, 2.0, 3.0, 4.0])
+        with pytest.raises(ValueError) as exc_info:
+            model_test(test_input, 1.0, 1.0)
+
+    def test_on_circular_data(self):
+        theta = pi / 4.0
+        test_argument = np.array(
+            [
+                [0.0, 1.0],
+                [cos(theta), sin(theta)],
+                [1.0, 0.0],
+                [cos(3 * theta), sin(3 * theta)],
+                [0.0, -1.0],
+                [cos(5 * theta), sin(5 * theta)],
+                [-1.0, 0.0],
+                [cos(7 * theta), sin(7 * theta)],
+            ]
+        )
+        actual = model_test(test_argument, 0.0, 0.0)
+        assert actual == pytest.approx(0.0)
